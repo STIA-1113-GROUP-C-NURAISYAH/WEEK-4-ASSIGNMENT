@@ -28,7 +28,7 @@ public class Assignment1b {
 		System.out.println("The monthly payment is $" + monthlypayment);
 		
 		//calculate total payment
-		totalpayment=monthlypayment*60;
+		totalpayment=monthlypayment*numofyears*12; // 5 years x 12 month
 		System.out.print("The total payment is $" + totalpayment);
 		
 	}
