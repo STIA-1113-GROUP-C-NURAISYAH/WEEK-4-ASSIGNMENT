@@ -1,0 +1,72 @@
+package assignment1;
+import java.util.Scanner;
+public class TotalPrice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc=new Scanner(System.in);
+		
+		//declaration of variables
+		
+		int numofitems;
+		
+		double qtyitem1;
+		double priceitem1;
+		
+		double qtyitem2;
+		double priceitem2;
+		
+		double qtyitem3;
+		double priceitem3;
+		
+		double price1;
+		double price2;
+		double price3;
+		
+		double totalprice;
+		double pricedisc;
+		double paidprice;
+		
+		
+		System.out.print("Enter the number of items: ");
+		numofitems=sc.nextInt();
+		
+		System.out.print("Enter price of first item: RM");
+		priceitem1=sc.nextDouble();
+		System.out.print("Enter quantity of first item: ");
+		qtyitem1=sc.nextInt();
+		
+		System.out.print("Enter price of second item: RM");
+		priceitem2=sc.nextDouble();
+		System.out.print("Enter quantity of second item: ");
+		qtyitem2=sc.nextInt();
+		
+		System.out.print("Enter price of third item: RM");
+		priceitem3=sc.nextDouble();
+		System.out.print("Enter quantity of third item: ");
+		qtyitem3=sc.nextInt();
+		
+		price1=priceitem1*qtyitem1;
+		price2=priceitem2*qtyitem2;
+		price3=priceitem3*qtyitem3;
+		
+		totalprice=price1+price2+price3;
+		
+		System.out.println("Total price: " + totalprice);
+		
+		if (totalprice>100)
+			pricedisc=(0.2*totalprice);
+		
+			else
+			pricedisc=(0.1*totalprice);
+			
+		paidprice=totalprice-pricedisc;
+			
+		System.out.println ("Discount received: " + pricedisc);
+		System.out.println ("Price to be paid: " + paidprice);
+		
+			
+	}
+
+}
