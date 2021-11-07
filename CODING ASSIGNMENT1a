@@ -10,25 +10,20 @@ public class TotalPrice {
 		//declaration of variables
 		
 		int numofitems;
-		
 		double qtyitem1;
 		double priceitem1;
-		
 		double qtyitem2;
 		double priceitem2;
-		
 		double qtyitem3;
 		double priceitem3;
-		
 		double price1;
 		double price2;
 		double price3;
-		
 		double totalprice;
 		double pricedisc;
 		double paidprice;
 		
-		
+		//insert input
 		System.out.print("Enter the number of items: ");
 		numofitems=sc.nextInt();
 		
@@ -47,6 +42,7 @@ public class TotalPrice {
 		System.out.print("Enter quantity of third item: ");
 		qtyitem3=sc.nextInt();
 		
+		//calculate the total price
 		price1=priceitem1*qtyitem1;
 		price2=priceitem2*qtyitem2;
 		price3=priceitem3*qtyitem3;
@@ -60,11 +56,13 @@ public class TotalPrice {
 		
 			else
 			pricedisc=(0.1*totalprice);
-			
+		
+		//calculate discount
 		paidprice=totalprice-pricedisc;
-			
-		System.out.println ("Discount received: " + pricedisc);
-		System.out.println ("Price to be paid: " + paidprice);
+		
+		//output
+		System.out.println ("Discount received: RM" + pricedisc);
+		System.out.println ("Price to be paid: RM" + paidprice);
 		
 			
 	}
