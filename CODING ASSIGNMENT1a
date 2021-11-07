@@ -16,9 +16,6 @@ public class TotalPrice {
 		double priceitem2;
 		int qtyitem3;
 		double priceitem3;
-		double price1;
-		double price2;
-		double price3;
 		double totalprice;
 		double pricedisc;
 		double paidprice;
