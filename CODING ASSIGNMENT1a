@@ -10,11 +10,11 @@ public class TotalPrice {
 		//declaration of variables
 		
 		int numofitems;
-		double qtyitem1;
+		int qtyitem1;
 		double priceitem1;
-		double qtyitem2;
+		int qtyitem2;
 		double priceitem2;
-		double qtyitem3;
+		int qtyitem3;
 		double priceitem3;
 		double price1;
 		double price2;
@@ -43,11 +43,7 @@ public class TotalPrice {
 		qtyitem3=sc.nextInt();
 		
 		//calculate the total price
-		price1=priceitem1*qtyitem1;
-		price2=priceitem2*qtyitem2;
-		price3=priceitem3*qtyitem3;
-		
-		totalprice=price1+price2+price3;
+		totalprice=(priceitem1*qtyitem1)+(priceitem2*qtyitem2)+(priceitem3*qtyitem3);
 		
 		System.out.println("Total price: RM" + totalprice);
 		
