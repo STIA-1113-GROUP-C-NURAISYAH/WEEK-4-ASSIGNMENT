@@ -26,11 +26,11 @@ public class Assignment1b {
 		
 		//calculate monthly payment
 		monthlypayment=3.5*60/2;
-		System.out.println("The monthly payment is " + monthlypayment);
+		System.out.println("The monthly payment is $" + monthlypayment);
 		
 		//calculate total payment
 		totalpayment=monthlypayment*60;
-		System.out.print("The total payment is " + totalpayment);
+		System.out.print("The total payment is $" + totalpayment);
 		
 	}
 
